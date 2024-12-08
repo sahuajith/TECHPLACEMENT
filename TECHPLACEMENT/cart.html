@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartContainer = document.getElementById('cart');
+            cartContainer.innerHTML = '';
+            
+            let total = 0;
+            cart.forEach(item => {
+                let itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item','d-flex','flex-row');
+                itemDiv.innerHTML = `<img src="${item.imageUrl}" class="cart-item-image">
+                    <div class="m-3 cart-item-details">
+                        
+                        <h4>${item.courseName}</h4>
+                        <p>Price: $${item.price}</p>
+                    </div>
+                    
+                    <hr>
+                `;
+                cartContainer.appendChild(itemDiv);
+                total += item.price;
+                
+            });
+
+            let totalDiv = document.createElement('div');
+            totalDiv.innerHTML = `<h3>Total: $${total}</h3>`;
+            cartContainer.appendChild(totalDiv);
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            loadCart();
+        }
+
+        window.onload = loadCart;
+
+    
+    </script>
+    <style rel="stylesheet" href="checkout.css"></style>
+    <title>Cart</title>
+    
+</head>
+<body class="image-back">
+    <div class="container">
+        <h2 class="text-center m-3">Your Cart</h2>
+        
+        <div id="cart"></div>
+        <div class="row">
+           <a href="customer.html"> <button class="btn btn-secondary mr-auto">Buy Now</button ></a>
+            <a href="courses.html"><button class="btn btn-primary ml-5">View Courses</button></a>
+            <button class="btn btn-danger ml-5" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+</body>
+</html>

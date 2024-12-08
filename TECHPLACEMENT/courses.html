@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+<body class="course-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://img.freepik.com/free-vector/geography-education-logo-template-vector-with-globe-science-graphic_53876-114086.jpg?t=st=1733208973~exp=1733212573~hmac=02e312940ebc30b29cd856746cc48f4353e18c66f26ab9a60998fb47f3a9757e&w=740"
+              class="munch-logo"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navItem1" href="About.html">
+                About Us?
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link" href="courses.html" id="navItem2">Courses</a>
+              <a class="nav-link" href="login.html" id="navItem4">Login</a>
+              <a class="nav-link" href="contact.html" id="navItem4">Contact Us</a>
+              <button class="btn btn-primary ml-auto cart1" onclick="checkout()">Checkout</button>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    <h2 class="text-center courses">COURSES</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/young-cute-female-posing-indoor_344912-954.jpg?t=st=1733149335~exp=1733152935~hmac=9bac0baa58f88d0caf8d7f0d1e9ac4abb95f8be6c312f23b0cad26b2ba5e14fb&w=996
+        " class="frontend-image-src">
+        <div class="course-center">
+        <h4>Front End</h4>
+        <p>Build Responsive Real-World website with HTML,CSS and JAVASCRIPT.</p>
+        <li>Jonas</li>
+        <li class="course-list">$50</li>
+        <button class="course-button" onclick="addCart('FrontEnd',50, 'https://img.freepik.com/free-photo/young-cute-female-posing-indoor_344912-954.jpg?t=st=1733149335~exp=1733152935~hmac=9bac0baa58f88d0caf8d7f0d1e9ac4abb95f8be6c312f23b0cad26b2ba5e14fb&w=996')">Add To Cart</button>
+    </div></div></div>
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/virtual-classroom-study-space_23-2149178644.jpg?t=st=1733149386~exp=1733152986~hmac=e8cfc14423b84cbc954492a58700d3ccd8a3ad99ff8bfbbc482e6589731ed6d1&w=996
+        "class="frontend-image-src">
+        <div class="course-center">
+        <h3>Back End</h3>
+        <p>Understanding Backend Web development with Python</p>
+        <li>Dennis</li>
+        <li class="course-list">$50</li>
+        <button class="course-button" onclick="addCart('BackEnd',50,'https://img.freepik.com/free-photo/virtual-classroom-study-space_23-2149178644.jpg?t=st=1733149386~exp=1733152986~hmac=e8cfc14423b84cbc954492a58700d3ccd8a3ad99ff8bfbbc482e6589731ed6d1&w=996')">Add To Cart</button>
+        </div>
+    </div></div>
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/close-up-student-online-class_23-2148888815.jpg?t=st=1733149480~exp=1733153080~hmac=44389e47f08308c9f86ccce0bbe5f4fb180a0cf92c8f16255f254ec26ce12e77&w=996
+        "class="frontend-image-src">
+        <div class="course-center">
+        <h3>Full Stack Course</h3>
+        <p>Complete Full Stack BootCamp</p>
+        <li>Angela</li>
+        <li class="course-list">$50</li>
+        <button class="course-button"onclick="addCart('Full Stack Course',50,'https://img.freepik.com/free-photo/close-up-student-online-class_23-2148888815.jpg?t=st=1733149480~exp=1733153080~hmac=44389e47f08308c9f86ccce0bbe5f4fb180a0cf92c8f16255f254ec26ce12e77&w=996')">Add To Cart</button>
+    </div></div></div>
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/expressive-girl-posing-indoor_344912-1274.jpg?t=st=1733149500~exp=1733153100~hmac=b2eb54aa4cf7cee01ebeb00524234c82c5cadcd9bff45b81b461c5d6139a15f6&w=996
+        "class="frontend-image-src">
+        <div class="course-center">
+        <h3>AWS FULL COURSE</h3>
+        <p>Fundamentals of AWS Course</p>
+        <li>Nasser</li>
+        <li class="course-list">$50</li>
+        <button class="course-button" onclick="addCart('AWS FULL COURSE',50,'https://img.freepik.com/free-photo/expressive-girl-posing-indoor_344912-1274.jpg?t=st=1733149500~exp=1733153100~hmac=b2eb54aa4cf7cee01ebeb00524234c82c5cadcd9bff45b81b461c5d6139a15f6&w=996')">Add To Cart</button>
+    </div></div></div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/teacher-talking-with-her-students-online_23-2148771464.jpg?t=st=1733149519~exp=1733153119~hmac=3d7b4c9c8926c7e9cc7a09c82328fc49d106c00b2c2fe31f14af0fd3bfe88a3c&w=996
+        "class="frontend-image-src">
+        <div class="course-center">
+        <h3>DSA COURSE</h3>
+        <p>Complete Data structures and Algorithms by usin Java</p>
+        <li>James</li>
+        <li class="course-list">$50</li>
+        <button class="course-button"onclick="addCart('DSA',50,'https://img.freepik.com/free-photo/teacher-talking-with-her-students-online_23-2148771464.jpg?t=st=1733149519~exp=1733153119~hmac=3d7b4c9c8926c7e9cc7a09c82328fc49d106c00b2c2fe31f14af0fd3bfe88a3c&w=996')">Add To Cart</button>
+    </div></div></div>
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-vector/maths-online-course-economics-university-department-internet-classes-accounting-lessons-bookkeeping-mathematics-textbooks-digital-archive_335657-3270.jpg?t=st=1733149693~exp=1733153293~hmac=5a17d9512e39e81ad5ab8a8bedf6cb22dd5359ba95d54b5a9f7da0261cd4f49b&w=740
+        " class="frontend-image-src">
+        <div class="course-center">
+        <h3>Machine Learning</h3>
+        <p>Introduction the Machine Learning and Algorithms.</p>
+        <li>Musk</li>
+        <li class="course-list">$50</li>
+        <button class="course-button"onclick="addCart('Machine Learning',50,'https://img.freepik.com/free-vector/maths-online-course-economics-university-department-internet-classes-accounting-lessons-bookkeeping-mathematics-textbooks-digital-archive_335657-3270.jpg?t=st=1733149693~exp=1733153293~hmac=5a17d9512e39e81ad5ab8a8bedf6cb22dd5359ba95d54b5a9f7da0261cd4f49b&w=740')">Add To Cart</button>
+    </div></div></div>
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/female-product-photographer-studio_23-2148970226.jpg?t=st=1733149775~exp=1733153375~hmac=083ad87f2dc1e56b02d5b1ea83694aad530a3896940a3c47ba25c5d1e58c1845&w=996"class="frontend-image-src">
+        <div class="course-center">
+        <h3>Photography Course</h3>
+        <p>Mastering Photography from Basic to Advance Level</p>
+        <li>Ajit</li>
+        <li class="course-list">$50</li>
+        <button class="course-button"onclick="addCart('Photography Course',50,'https://img.freepik.com/free-photo/female-product-photographer-studio_23-2148970226.jpg?t=st=1733149775~exp=1733153375~hmac=083ad87f2dc1e56b02d5b1ea83694aad530a3896940a3c47ba25c5d1e58c1845&w=996')">Add To Cart</button>
+    </div></div></div>
+    <div class="col-12 col-md-6 col-lg-3">
+    <div class="courses-1">
+        <img src="https://img.freepik.com/free-photo/close-up-girl-holding-laptop_23-2148499004.jpg?t=st=1733149887~exp=1733153487~hmac=2c619c2876650cb9e3d123bcfcb9fbc37168a444a7141a7582de90ec8e0c7500&w=900"class="frontend-image-src" id="image">
+        <div class="course-center">
+        <h3>LLB course</h3>
+        <p>Bachelors of Laws (LLB):Comprehensive Legal studies.</p>
+        <li>Vakeel Saab</li>
+        <li class="course-list">$50</li>
+        <button class="course-button" onclick="addCart('LLB Course',50,'https://img.freepik.com/free-photo/close-up-girl-holding-laptop_23-2148499004.jpg?t=st=1733149887~exp=1733153487~hmac=2c619c2876650cb9e3d123bcfcb9fbc37168a444a7141a7582de90ec8e0c7500&w=900')">Add To Cart</button>
+    </div></div></div>
+    
+    
+</div>
+<div class="row">
+    <a href="about.html"><button class="btn btn-secondary mr-auto">Previous</button></a>
+    <button class="btn btn-primary ml-auto cart1" onclick="checkout()">Checkout</button>
+</div>
+</div>
+<script>
+    function addCart(courseName, price, imageUrl) {
+        alert("This Course has been added.")
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push({ courseName: courseName, price: price, imageUrl: imageUrl });
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    function checkout() {
+        window.location.href = "cart.html";
+    }
+       function checkout() {
+        window.location.href = "cart.html";
+    }
+    
+</script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.cart-item-image{
+    height:100px
+}
+.image-back{
+    background-color: aqua;
+}
+.cart-item{
+    background-color: white;
+    margin:10px;
+}

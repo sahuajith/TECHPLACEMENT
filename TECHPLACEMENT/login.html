@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="login.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
+</head>
+<body class="page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://img.freepik.com/free-vector/geography-education-logo-template-vector-with-globe-science-graphic_53876-114086.jpg?t=st=1733208973~exp=1733212573~hmac=02e312940ebc30b29cd856746cc48f4353e18c66f26ab9a60998fb47f3a9757e&w=740"
+              class="munch-logo"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navItem1" href="About.html">
+                About Us?
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link" href="courses.html" id="navItem2">Courses</a>
+              <a class="nav-link" href="login.html" id="navItem4">Login</a>
+              <a class="nav-link" href="contact.html" id="navItem4">Contact Us</a>
+              <button class="btn btn-primary ml-auto cart1" onclick="checkout()">Checkout</button>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="login-page p-3">
+    <label class="label-1" for="input1">Enter Username/usermail:</label><br>
+    <input class="input-1"id="input1" type="input"><br><br>
+    <label class="label-2" for="input2">Enter password:</label><br>
+    <input  class="input-1" id="input2"type="password"><br><br>
+    <button class="btn btn-primary" onclick="login()">Log In</button>
+        
+    <p>Don't have a Account.<button class="btn btn-secondary mt-2 ml-2" onclick="signup()">Sign Up</button> </p>
+    </div>
+    <script>
+        function login(){
+            alert("Please select Courses")
+        }
+        function signup(){
+            alert("Please select Courses")
+        }
+    
+       function checkout() {
+        window.location.href = "cart.html";
+    }
+
+    </script>
+</body>
+</html>

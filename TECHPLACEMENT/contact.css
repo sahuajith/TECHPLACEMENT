@@ -1,0 +1,66 @@
+
+.follow-us-section {
+  background-color: rgb(152, 139, 139);
+}
+.follow-us-section-heading {
+  text-align: center;
+  color: #0d68ae;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+  margin-top:15%;
+}
+.follow-us-icon-container {
+  background-color: #faf7e8;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin: 15px;
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 22px;
+}
+li{
+    margin-top: 10px;;
+    list-style-type:none;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+   
+}
+
+.button1{
+  text-align: center;
+}
+.list{
+  font-weight: bold;
+  color:white;
+}
+.container-1{
+  background-color:black;
+  padding:20px;
+  margin-top:5%;
+
+}
+.munch-logo {
+  width: 80px;
+  height: 70px;
+  border-radius: 100px;
+}
+#navItem1 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem2 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem3 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem4 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
